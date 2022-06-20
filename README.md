@@ -40,18 +40,15 @@ to play around with OCaml.
 
 ```
 2 > 3;;
-
 "bye" ^ "bye";;
-
 2.1 *. 3;
-
 (2.1 : float)
 ```
 
-- `;;` marks the end of the statements.
-- `^` is the string concatenation operator.
-- `*.` is the multiplication for floats.
-- `:` is used for type annotations.
+`;;` marks the end of the statements.
+`^` is the string concatenation operator.
+`*.` is the multiplication for floats.
+`:` is used for type annotations.
 
 ## If-Else
 
