@@ -37,3 +37,34 @@ to play around with OCaml.
 ## Links
 
 1. [A First Hour with OCaml](https://ocaml.org/docs/first-hour)
+
+# Examples
+
+## Lists
+
+* [Tail of a list](https://ocaml.org/problems#1)
+
+    ```ocaml
+    let rec last = function
+    | [] -> None
+    | [x] -> Some x
+    | _ :: t -> last t;;
+    ```
+
+* [Eliminate consecutive duplicates](https://ocaml.org/problems#8)
+
+    ```ocaml
+    let rec compress = function
+    | f :: (s :: _ as t) -> if f = s then compress t else f :: compress t
+    | small_one -> small_one;;
+    val compress : 'a list -> 'a list = <fun>
+    ```
+
+* [Pack consecutive duplicates](https://ocaml.org/problems#9)
+
+    ```ocaml
+    let rec pack = function
+    | f :: (s :: _ as t) -> let (hp :: tp as rec_result) = pack t in (if f = s then ((f :: hp) :: tp) else [f] :: rec_result)
+    | [x] -> [[x]]
+    | [] -> [];;
+    ```
