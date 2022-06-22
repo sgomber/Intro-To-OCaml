@@ -57,7 +57,6 @@ to play around with OCaml.
     let rec compress = function
     | f :: (s :: _ as t) -> if f = s then compress t else f :: compress t
     | small_one -> small_one;;
-    val compress : 'a list -> 'a list = <fun>
     ```
 
 * [Pack consecutive duplicates](https://ocaml.org/problems#9)
