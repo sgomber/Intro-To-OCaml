@@ -23,7 +23,7 @@ It can run in a terminal or in Emacs. It supports line editing, history, real-ti
 sensitive completion, colors, and more.
 
 ```bash
-sudoo apt-get install utop
+sudo apt-get install utop
 ```
 
 # Getting Started
